@@ -1,0 +1,16 @@
+uuid: 6445379c-c366-4c15-b4a1-a24f9b262e76
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.front_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.front_page
+target_entity_type_id: node
+target_bundle: front_page
+default_langcode: site_default
+language_alterable: true

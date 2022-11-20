@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for app module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function app_node_presave(EntityInterface $entity) {
+  if ($entity->hasField('field_page_title')) {
+    $entity->field_page_title->value =$entity->getTitle();
+  }
+}

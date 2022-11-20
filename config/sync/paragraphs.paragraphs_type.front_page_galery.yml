@@ -1,0 +1,10 @@
+uuid: 45ba052f-6200-4c27-852d-3476aa3eb71d
+langcode: en
+status: true
+dependencies: {  }
+id: front_page_galery
+label: 'Front Page Galery'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

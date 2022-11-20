@@ -1,0 +1,33 @@
+uuid: 01e36785-7b6a-433a-95b7-a7d250e48b5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: alias_pattern_page_pl
+label: 'Alias Pattern Base Page Pl'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  efd44248-13b8-496b-b0cd-b14ed682d38a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: efd44248-13b8-496b-b0cd-b14ed682d38a
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+  6ed50538-7d74-4d9d-be50-a9f2a52c2dc9:
+    id: language
+    negate: false
+    uuid: 6ed50538-7d74-4d9d-be50-a9f2a52c2dc9
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      pl: pl
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

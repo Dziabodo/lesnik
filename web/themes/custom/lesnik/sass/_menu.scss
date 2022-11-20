@@ -1,0 +1,25 @@
+.region-primary-menu {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  @include background-green;
+  width: 100%;
+  .menu--main {
+    height: 100%;
+    width: 100%;
+    .menu {
+      text-align: right;
+      padding-right: 5%;
+      .menu-item {
+        display: inline-block;
+        padding-right: 10px;
+        a {
+          @include link-white;
+          &:hover {
+            @include link-orange;
+          }
+        }
+      }
+    }
+  }
+}

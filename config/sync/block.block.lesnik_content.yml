@@ -1,0 +1,22 @@
+uuid: 2c4dcab9-dd75-49e4-8ce1-7caa5d5600e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lesnik
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: lesnik_content
+theme: lesnik
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,50 @@
+uuid: 49f66c96-8815-4fd5-afbb-9b00d25cd2eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.front_page_galery.field_description
+    - field.field.paragraph.front_page_galery.field_image
+    - field.field.paragraph.front_page_galery.field_link
+    - image.style.front_page_slider
+    - paragraphs.paragraphs_type.front_page_galery
+  module:
+    - link
+    - media
+    - text
+id: paragraph.front_page_galery.default
+targetEntityType: paragraph
+bundle: front_page_galery
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: front_page_slider
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

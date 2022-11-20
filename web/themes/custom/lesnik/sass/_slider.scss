@@ -1,0 +1,39 @@
+.swiper {
+  width: 100%;
+  max-height: 100vh;
+  .paragraph--type--front-page-galery {
+    position: relative;
+    .field--name-field-link {
+      position: absolute;
+      bottom: 50%;
+      left: 10%;
+      font-size: 30px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      a {
+        @include link-white;
+        &:hover {
+          @include link-orange;
+        }
+      }
+    }
+    .field--name-field-description {
+      position: absolute;
+      bottom: 30%;
+      left: 10%;
+      font-size: 18px;
+      padding: 10px;
+      width: 50%;
+      background: rgba(0, 0, 0, 0.6);
+      @include link-white;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 5px;
+    @include link-green;
+    &:hover {
+      @include link-orange;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+uuid: a42507b4-002b-4853-a187-906cef39661f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - lesnik
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: lesnik_powered
+theme: lesnik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

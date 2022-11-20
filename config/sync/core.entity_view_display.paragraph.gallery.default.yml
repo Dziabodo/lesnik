@@ -1,0 +1,29 @@
+uuid: 93691753-b1e9-4b2d-a8b1-b98b81351a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_gellery_title
+    - field.field.paragraph.gallery.field_image_gallery
+    - image.style.front_page_slider
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - media
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_image_gallery:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: front_page_slider
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_gellery_title: true

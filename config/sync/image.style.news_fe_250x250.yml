@@ -1,0 +1,15 @@
+uuid: e6948581-0d40-4983-9f0c-af061066b314
+langcode: en
+status: true
+dependencies: {  }
+name: news_fe_250x250
+label: 'news FE 250x250'
+effects:
+  9915b27c-4c2d-4842-ac14-860618d89187:
+    uuid: 9915b27c-4c2d-4842-ac14-860618d89187
+    id: image_crop
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      anchor: center-center

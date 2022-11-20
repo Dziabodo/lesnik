@@ -1,0 +1,14 @@
+uuid: 18ad7372-b9e8-4c6d-9ada-f64ab067210a
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - karol.weclawski@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

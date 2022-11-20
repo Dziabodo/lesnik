@@ -1,0 +1,49 @@
+a {
+  @include font-bold;
+  text-decoration: none;
+  @include link-green;
+  &:hover {
+    @include link-orange;
+  }
+}
+
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  .field--name-field-page-title {
+    position: absolute;
+    bottom: 10%;
+    font-size: 60px;
+    @include link-white;
+    @include font-bold;
+    width: 100%;
+    text-align: center;
+  }
+  .field--name-field-image {
+    position: absolute;
+    bottom: 50%;
+    height:50vh;
+    opacity: 0.7;
+  }
+}
+
+article.content {
+  width: 70%;
+  margin: auto;
+  min-height: 30vh;
+  padding: 30px 0;
+}
+
+#edit-actions {
+  input {
+    padding: 5px;
+    @include border-green;
+    @include background-white;
+    @include link-green;
+    &:hover {
+      @include link-orange;
+    }
+  }
+}

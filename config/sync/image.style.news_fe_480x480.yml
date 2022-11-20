@@ -1,0 +1,14 @@
+uuid: 2f1b64f3-8360-4df2-959a-1b9f279523fb
+langcode: en
+status: true
+dependencies: {  }
+name: news_fe_480x480
+label: 'News FE 480x480'
+effects:
+  11a775ac-c27d-4153-8208-6e7f88ccc300:
+    uuid: 11a775ac-c27d-4153-8208-6e7f88ccc300
+    id: image_resize
+    weight: 1
+    data:
+      width: 480
+      height: 480

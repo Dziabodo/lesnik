@@ -1,0 +1,26 @@
+name: lesnik
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - core/jquery
+  - lesnik/base
+  - lesnik/swiper
+  - lesnik/slider
+  - lesnik/gallery
+  - lesnik/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - lesnik/user
+  core/drupal.dropbutton:
+    - lesnik/dropbutton
+  core/drupal.dialog:
+    - lesnik/dialog
+  file/drupal.file:
+    - lesnik/file
+  core/drupal.progress:
+    - lesnik/progress
+core_version_requirement: ^9
+generator: 'starterkit_theme:9.4.8'

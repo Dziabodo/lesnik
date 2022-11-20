@@ -1,0 +1,20 @@
+uuid: 061a293c-af2d-47e3-bbd6-88593cb3023c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - lesnik
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: lesnik_primary_admin_actions
+theme: lesnik
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

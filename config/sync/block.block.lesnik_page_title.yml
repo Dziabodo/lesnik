@@ -1,0 +1,20 @@
+uuid: 59e395d3-8b6b-4472-b2de-8e3aa33cad03
+langcode: en
+status: false
+dependencies:
+  theme:
+    - lesnik
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: lesnik_page_title
+theme: lesnik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

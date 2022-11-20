@@ -1,0 +1,14 @@
+uuid: bf8ae7eb-9035-488a-9189-568541aff2f5
+langcode: en
+status: true
+dependencies: {  }
+name: front_page_slider
+label: 'Front Page Slider'
+effects:
+  3f3f27b6-1ac2-4dda-ba53-0302b6252411:
+    uuid: 3f3f27b6-1ac2-4dda-ba53-0302b6252411
+    id: image_resize
+    weight: 1
+    data:
+      width: 2048
+      height: 1152

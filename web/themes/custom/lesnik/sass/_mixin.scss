@@ -1,0 +1,31 @@
+@mixin link-green {
+  color: #031C07;
+}
+
+@mixin link-orange {
+  color: #DD843B;
+}
+
+@mixin link-white {
+  color: #FFFFFF;
+}
+
+@mixin background-grey {
+  background: #F0F0F0;
+}
+
+@mixin background-white {
+  background: #FFFFFF;
+}
+
+@mixin background-green {
+  background: #031C07;
+}
+
+@mixin border-green {
+  border: #031C07 solid 2px;
+}
+
+@mixin font-bold {
+  font-weight: 600;
+}

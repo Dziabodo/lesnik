@@ -1,0 +1,25 @@
+uuid: 0ff11c7a-5643-4f16-b9e7-116953bc9e6a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - lesnik
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: lesnik_site_branding
+theme: lesnik
+region: header
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,44 @@
+uuid: 64fcdb7d-02ba-4894-9376-69f0706e97d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.front_page_galery.field_description
+    - field.field.paragraph.front_page_galery.field_image
+    - field.field.paragraph.front_page_galery.field_link
+    - paragraphs.paragraphs_type.front_page_galery
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.front_page_galery.default
+targetEntityType: paragraph
+bundle: front_page_galery
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,19 @@
+uuid: 0a0f4079-3015-40e2-ac2a-f1549d95ab72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_title
+    - node.type.gellery
+id: node.gellery.field_page_title
+field_name: field_page_title
+entity_type: node
+bundle: gellery
+label: 'Page Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
