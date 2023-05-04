@@ -258,9 +258,6 @@ footer #block-copyright {
 
 /* line 1, ../sass/_front-page.scss */
 .node__content {
-  background-image: url("../images/background/bg-forest.jpg");
-  background-repeat: no-repeat;
-  color: #e5eee6;
   padding: 30px 60px;
   margin: auto;
 }
