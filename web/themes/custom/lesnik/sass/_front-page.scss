@@ -1,4 +1,10 @@
 .node__content {
-  width: 70%;
+  background-image: url('../images/background/bg-forest.jpg');
+  background-repeat: no-repeat;
+  @include font-white;
+  padding: 30px 60px;
   margin: auto;
-}
+  @include devices(mobile) {
+    padding: 20px 40px;
+  }
+  }
