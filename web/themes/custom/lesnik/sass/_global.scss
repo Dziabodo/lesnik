@@ -10,8 +10,16 @@ a {
 .header-wrapper {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
+   
+  img {
+    @include devices(mobile){
+      width: 100%;
+      height: 80vh;
+      object-fit:cover;
+    }
+  }
   .field--name-field-page-title {
     position: absolute;
     bottom: 10%;
@@ -30,11 +38,26 @@ a {
 }
 
 article.content {
-  width: 70%;
   margin: auto;
   min-height: 30vh;
-  padding: 30px 0;
+  .webform-submission-form {
+    padding: 30px 40px;
+  }
+  .field--type-text-with-summary {
+    padding: 30px 40px;
+  }
 }
+.form-text{
+  @include devices(mobile){
+   max-width: 70vw;
+  }
+}
+.form-email{
+  @include devices(mobile){
+   max-width: 70vw;
+  }
+}
+
 
 #edit-actions {
   input {

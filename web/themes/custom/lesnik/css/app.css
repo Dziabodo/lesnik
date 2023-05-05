@@ -13,10 +13,18 @@ a:hover {
 .header-wrapper {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
 }
-/* line 15, ../sass/_global.scss */
+@media only screen and (max-width: 680px) {
+  /* line 16, ../sass/_global.scss */
+  .header-wrapper img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+}
+/* line 23, ../sass/_global.scss */
 .header-wrapper .field--name-field-page-title {
   position: absolute;
   bottom: 10%;
@@ -26,7 +34,7 @@ a:hover {
   width: 100%;
   text-align: center;
 }
-/* line 24, ../sass/_global.scss */
+/* line 32, ../sass/_global.scss */
 .header-wrapper .field--name-field-image {
   position: absolute;
   bottom: 50%;
@@ -34,22 +42,42 @@ a:hover {
   opacity: 0.7;
 }
 
-/* line 32, ../sass/_global.scss */
+/* line 40, ../sass/_global.scss */
 article.content {
-  width: 70%;
   margin: auto;
   min-height: 30vh;
-  padding: 30px 0;
+}
+/* line 43, ../sass/_global.scss */
+article.content .webform-submission-form {
+  padding: 30px 40px;
+}
+/* line 46, ../sass/_global.scss */
+article.content .field--type-text-with-summary {
+  padding: 30px 40px;
 }
 
-/* line 40, ../sass/_global.scss */
+@media only screen and (max-width: 680px) {
+  /* line 50, ../sass/_global.scss */
+  .form-text {
+    max-width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  /* line 55, ../sass/_global.scss */
+  .form-email {
+    max-width: 70vw;
+  }
+}
+
+/* line 63, ../sass/_global.scss */
 #edit-actions input {
   padding: 5px;
   border: #031C07 solid 2px;
   background: #FFFFFF;
   color: #031C07;
 }
-/* line 45, ../sass/_global.scss */
+/* line 68, ../sass/_global.scss */
 #edit-actions input:hover {
   color: #DD843B;
 }
