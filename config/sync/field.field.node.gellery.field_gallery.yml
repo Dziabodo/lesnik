@@ -1,0 +1,34 @@
+uuid: 1d46c9c6-01fb-4513-9a82-d6c539f7cf52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.gellery
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: node.gellery.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: gellery
+label: Gallery
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+    negate: 0
+    target_bundles_drag_drop:
+      front_page_galery:
+        weight: 3
+        enabled: false
+      gallery:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

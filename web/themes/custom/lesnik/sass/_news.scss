@@ -1,0 +1,27 @@
+.view-news {
+  padding: 20px;
+  .view-content {
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
+    @include background-white;
+    .views-row {
+      max-width: 300px;
+      display: inline-block;
+      padding: 15px;
+      @include border-green;
+      .views-field-field-teaser-image {
+        text-align: center;
+        width: auto;
+      }
+      .views-field-title {
+        text-align: center;
+        padding: 5px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.news {
+}

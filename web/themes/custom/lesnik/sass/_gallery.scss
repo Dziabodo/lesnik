@@ -1,0 +1,30 @@
+#block-lesnik-content {
+  .view-gallery {
+    padding: 20px;
+    .view-content {
+      max-width: fit-content;
+      margin: auto;
+      @include background-white;
+      .views-row {
+        max-width: 300px;
+        display: inline-block;
+        padding: 15px;
+        margin-right: 15px;
+        @include border-green;
+        .views-field-field-teaser-image {
+          text-align: center;
+          width: auto;
+        }
+        .views-field-title {
+          text-align: center;
+          padding: 5px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+.paragraph--type--gallery {
+  background: #000;
+}

@@ -1,0 +1,35 @@
+uuid: fdb5dc6b-f1c2-456b-b694-a3b9f1a696f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: alias_pattern
+label: 'Alias Pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  d97a6d50-668c-4d29-8b2c-30371f73e1cc:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d97a6d50-668c-4d29-8b2c-30371f73e1cc
+    context_mapping:
+      node: node
+    bundles:
+      gellery: gellery
+      news: news
+      page: page
+  716062fb-ce74-4c9c-8365-3a9fc59841c2:
+    id: language
+    negate: false
+    uuid: 716062fb-ce74-4c9c-8365-3a9fc59841c2
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

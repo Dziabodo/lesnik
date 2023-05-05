@@ -1,0 +1,33 @@
+uuid: fb823003-a484-4b63-9ad0-a715b657645f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: alias_pattern_news_pl
+label: 'Alias Pattern News Pl'
+type: 'canonical_entities:node'
+pattern: '/aktualnosci/[node:title]'
+selection_criteria:
+  05db18d4-042d-434f-9669-3894a0bf3a89:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 05db18d4-042d-434f-9669-3894a0bf3a89
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+  eae134c8-8734-4df9-8567-782a36d39677:
+    id: language
+    negate: false
+    uuid: eae134c8-8734-4df9-8567-782a36d39677
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      pl: pl
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

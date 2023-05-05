@@ -1,0 +1,38 @@
+uuid: ff007efb-09dc-48a3-82c8-11b27cf7bbf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gallery
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - lesnik
+id: views_block__gallery_block_1
+theme: lesnik
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:gallery-block_1'
+settings:
+  id: 'views_block:gallery-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      pl: pl
+  request_path:
+    id: request_path
+    negate: false
+    pages: /gallery

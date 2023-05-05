@@ -1,0 +1,21 @@
+uuid: 730e5c2a-a9e4-4e91-8b13-08c55afcf5fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_google_map
+    - paragraphs.paragraphs_type.map
+  module:
+    - google_map_field
+id: paragraph.map.field_google_map
+field_name: field_google_map
+entity_type: paragraph
+bundle: map
+label: 'Google Map'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

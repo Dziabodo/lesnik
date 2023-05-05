@@ -1,0 +1,21 @@
+uuid: 39726789-d42b-4053-8c4b-85ce440114f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.front_page_galery
+  module:
+    - text
+id: paragraph.front_page_galery.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: front_page_galery
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

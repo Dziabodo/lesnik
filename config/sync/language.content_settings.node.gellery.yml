@@ -1,0 +1,16 @@
+uuid: 18cc9780-0f0e-4067-b498-f439eb841566
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gellery
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.gellery
+target_entity_type_id: node
+target_bundle: gellery
+default_langcode: site_default
+language_alterable: true

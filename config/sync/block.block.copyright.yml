@@ -1,0 +1,25 @@
+uuid: 31669dbd-2cef-4b3e-aec1-8a4123f6f4fe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bd9745ea-b3a1-4440-9bcc-e64061a028f3'
+  module:
+    - block_content
+  theme:
+    - lesnik
+id: copyright
+theme: lesnik
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:bd9745ea-b3a1-4440-9bcc-e64061a028f3'
+settings:
+  id: 'block_content:bd9745ea-b3a1-4440-9bcc-e64061a028f3'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

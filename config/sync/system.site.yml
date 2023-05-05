@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: pl
+uuid: b38ebac2-d5bc-4333-9731-be5882cf5f2f
+name: 'Koło Łowieckie Leśnik Lipinki Łużyckie'
+mail: karol.weclawski@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pl

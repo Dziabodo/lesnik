@@ -1,0 +1,23 @@
+uuid: 459eaf95-60b3-47c8-93e3-bfde32cce061
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - lesnik
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: lesnik_search_form_wide
+theme: lesnik
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

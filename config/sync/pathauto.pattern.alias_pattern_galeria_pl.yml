@@ -1,0 +1,33 @@
+uuid: e52b8746-9f55-4bd6-8200-03b3e82019d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: alias_pattern_galeria_pl
+label: 'Alias Pattern Galeria Pl'
+type: 'canonical_entities:node'
+pattern: '/galeria/[node:title]'
+selection_criteria:
+  15fd1c3e-adff-4efe-b548-f6acf97fdd8a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 15fd1c3e-adff-4efe-b548-f6acf97fdd8a
+    context_mapping:
+      node: node
+    bundles:
+      gellery: gellery
+  f6baf85f-67cf-481d-81c1-54b9e6ebc4ab:
+    id: language
+    negate: false
+    uuid: f6baf85f-67cf-481d-81c1-54b9e6ebc4ab
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      pl: pl
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

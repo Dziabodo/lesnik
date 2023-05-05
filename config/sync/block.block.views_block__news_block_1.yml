@@ -1,0 +1,29 @@
+uuid: 7f91f5fc-c2b5-4fb2-aeb7-9805da5b30f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - lesnik
+id: views_block__news_block_1
+theme: lesnik
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

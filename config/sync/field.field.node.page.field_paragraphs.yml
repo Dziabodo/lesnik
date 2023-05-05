@@ -1,0 +1,49 @@
+uuid: 1b3b2673-b234-4871-b5cc-80834a2c51de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+      webform: webform
+      image: image
+      map: map
+    negate: 0
+    target_bundles_drag_drop:
+      front_page_galery:
+        weight: 4
+        enabled: false
+      gallery:
+        weight: 5
+        enabled: true
+      image:
+        weight: 8
+        enabled: true
+      map:
+        weight: 9
+        enabled: true
+      webform:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions
