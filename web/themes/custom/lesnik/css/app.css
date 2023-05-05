@@ -13,10 +13,10 @@ a:hover {
 .header-wrapper {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
 }
-/* line 15, ../sass/_global.scss */
+/* line 16, ../sass/_global.scss */
 .header-wrapper .field--name-field-page-title {
   position: absolute;
   bottom: 10%;
@@ -26,30 +26,64 @@ a:hover {
   width: 100%;
   text-align: center;
 }
-/* line 24, ../sass/_global.scss */
+/* line 25, ../sass/_global.scss */
 .header-wrapper .field--name-field-image {
   position: absolute;
   bottom: 50%;
-  height: 50vh;
+  height: 70vh;
   opacity: 0.7;
 }
-
-/* line 32, ../sass/_global.scss */
-article.content {
-  width: 70%;
-  margin: auto;
-  min-height: 30vh;
-  padding: 30px 0;
+@media only screen and (max-width: 680px) {
+  /* line 25, ../sass/_global.scss */
+  .header-wrapper .field--name-field-image {
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 33, ../sass/_global.scss */
+  .header-wrapper .field--name-field-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-/* line 40, ../sass/_global.scss */
+/* line 43, ../sass/_global.scss */
+article.content {
+  margin: auto;
+  min-height: 30vh;
+}
+/* line 46, ../sass/_global.scss */
+article.content .webform-submission-form {
+  padding: 30px 40px;
+}
+/* line 49, ../sass/_global.scss */
+article.content .field--type-text-with-summary {
+  padding: 30px 40px;
+}
+
+@media only screen and (max-width: 680px) {
+  /* line 53, ../sass/_global.scss */
+  .form-text {
+    max-width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  /* line 58, ../sass/_global.scss */
+  .form-email {
+    max-width: 70vw;
+  }
+}
+
+/* line 66, ../sass/_global.scss */
 #edit-actions input {
   padding: 5px;
   border: #031C07 solid 2px;
   background: #FFFFFF;
   color: #031C07;
 }
-/* line 45, ../sass/_global.scss */
+/* line 71, ../sass/_global.scss */
 #edit-actions input:hover {
   color: #DD843B;
 }
@@ -59,11 +93,19 @@ article.content {
   width: 100%;
   max-height: 100vh;
 }
-/* line 4, ../sass/_slider.scss */
+@media only screen and (max-width: 680px) {
+  /* line 4, ../sass/_slider.scss */
+  .swiper img {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+  }
+}
+/* line 12, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery {
   position: relative;
 }
-/* line 6, ../sass/_slider.scss */
+/* line 14, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-link {
   position: absolute;
   bottom: 50%;
@@ -72,15 +114,21 @@ article.content {
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
 }
-/* line 13, ../sass/_slider.scss */
+@media only screen and (max-width: 680px) {
+  /* line 14, ../sass/_slider.scss */
+  .swiper .paragraph--type--front-page-galery .field--name-field-link {
+    display: none;
+  }
+}
+/* line 24, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-link a {
   color: #FFFFFF;
 }
-/* line 15, ../sass/_slider.scss */
+/* line 26, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-link a:hover {
   color: #DD843B;
 }
-/* line 20, ../sass/_slider.scss */
+/* line 31, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-description {
   position: absolute;
   bottom: 30%;
@@ -91,13 +139,26 @@ article.content {
   background: rgba(0, 0, 0, 0.6);
   color: #FFFFFF;
 }
-/* line 31, ../sass/_slider.scss */
+@media only screen and (max-width: 680px) {
+  /* line 31, ../sass/_slider.scss */
+  .swiper .paragraph--type--front-page-galery .field--name-field-description {
+    display: none;
+  }
+}
+/* line 45, ../sass/_slider.scss */
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
   padding: 5px;
   color: #031C07;
 }
-/* line 35, ../sass/_slider.scss */
+@media only screen and (max-width: 680px) {
+  /* line 45, ../sass/_slider.scss */
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none;
+  }
+}
+/* line 52, ../sass/_slider.scss */
 .swiper .swiper-button-next:hover,
 .swiper .swiper-button-prev:hover {
   color: #DD843B;
@@ -139,19 +200,25 @@ article.content {
 footer {
   background: #031C07;
 }
-/* line 4, ../sass/_footer.scss */
+/* line 3, ../sass/_footer.scss */
+footer #block-footer {
+  padding-top: 5px;
+}
+/* line 5, ../sass/_footer.scss */
 footer #block-footer .menu-item {
   text-align: center;
 }
-/* line 6, ../sass/_footer.scss */
+/* line 7, ../sass/_footer.scss */
 footer #block-footer .menu-item a {
+  display: block;
+  padding-top: 5px;
   color: #FFFFFF;
 }
-/* line 8, ../sass/_footer.scss */
+/* line 11, ../sass/_footer.scss */
 footer #block-footer .menu-item a:hover {
   color: #DD843B;
 }
-/* line 14, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 footer #block-copyright {
   font-size: 8px;
   text-align: center;
@@ -166,14 +233,14 @@ footer #block-copyright {
 .view-news .view-content {
   max-width: fit-content;
   margin: auto;
+  text-align: center;
   background: #FFFFFF;
 }
-/* line 7, ../sass/_news.scss */
+/* line 8, ../sass/_news.scss */
 .view-news .view-content .views-row {
   max-width: 300px;
   display: inline-block;
   padding: 15px;
-  margin-right: 15px;
   border: #031C07 solid 2px;
 }
 /* line 13, ../sass/_news.scss */
@@ -225,8 +292,14 @@ footer #block-copyright {
 
 /* line 1, ../sass/_front-page.scss */
 .node__content {
-  width: 70%;
+  padding: 30px 60px;
   margin: auto;
+}
+@media only screen and (max-width: 680px) {
+  /* line 1, ../sass/_front-page.scss */
+  .node__content {
+    padding: 20px 40px;
+  }
 }
 
 /* line 2, ../sass/_imageParagraph.scss */

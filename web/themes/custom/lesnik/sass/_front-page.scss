@@ -1,4 +1,7 @@
 .node__content {
-  width: 70%;
+  padding: 30px 60px;
   margin: auto;
-}
+  @include devices(mobile) {
+    padding: 20px 40px;
+  }
+  }

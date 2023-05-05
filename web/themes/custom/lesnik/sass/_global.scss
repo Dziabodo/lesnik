@@ -10,8 +10,9 @@ a {
 .header-wrapper {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
+
   .field--name-field-page-title {
     position: absolute;
     bottom: 10%;
@@ -24,17 +25,42 @@ a {
   .field--name-field-image {
     position: absolute;
     bottom: 50%;
-    height:50vh;
+    height:70vh;
     opacity: 0.7;
+    @include devices(mobile){
+      bottom: 0;
+    }
+    img {
+      @include devices(mobile){
+        width: 100%;
+        height:100%;
+        object-fit:cover;
+      }
+    }
   }
 }
 
 article.content {
-  width: 70%;
   margin: auto;
   min-height: 30vh;
-  padding: 30px 0;
+  .webform-submission-form {
+    padding: 30px 40px;
+  }
+  .field--type-text-with-summary {
+    padding: 30px 40px;
+  }
 }
+.form-text{
+  @include devices(mobile){
+   max-width: 70vw;
+  }
+}
+.form-email{
+  @include devices(mobile){
+   max-width: 70vw;
+  }
+}
+
 
 #edit-actions {
   input {

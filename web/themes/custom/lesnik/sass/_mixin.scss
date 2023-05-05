@@ -5,6 +5,9 @@
 @mixin link-orange {
   color: #DD843B;
 }
+@mixin font-white {
+  color: #e5eee6;
+}
 
 @mixin link-white {
   color: #FFFFFF;
@@ -28,4 +31,12 @@
 
 @mixin font-bold {
   font-weight: 600;
+}
+@mixin devices ($breakpoints) {
+  @if $breakpoints == mobile {
+    @media only screen and (max-width: 680px){
+      @content
+    }
+  }
+
 }
