@@ -19,14 +19,65 @@
         object-fit: contain;
       }
     }
+    .hamburger {
+      display:none;
+      position:absolute;
+      top:0;
+      right:0;
+      line-height:90px;
+      padding:5px 15px 0px 15px;
+      border:0;
+      font-size:1.4em;
+      font-weight:bold;
+      outline:none;
+      background:none;
+      @include link-white;
+        &:hover {
+          @include link-orange;
+        }
+       @include devices(mobile){
+        display:block;
+      }
+    }
+    .cross{  
+      display:none;
+      position:absolute;
+      top:0;
+      right:0;
+      padding:7px 15px 0px 15px;
+      border:0;
+      font-size:3em;
+      line-height:120px;
+      outline:none;
+      background:none;
+      @include link-white;
+        &:hover {
+          @include link-orange;
+        }
+      }
     .menu {
+      @include devices(mobile){
+        display:none;
+        position:absolute;
+        top:90px;
+        margin:10px 0 0 0; 
+        width:100%;
+        text-align: center;
+        @include background-green;
+      }
       text-align: right;
       padding-right: 5%;
       display:flex;
       .menu-item {
+        @include devices(mobile){
+          padding:10px;
+        }
         display: inline-block;
         align-self: center;
         padding-right: 10px;
+        @include devices(mobile){
+          display:block;
+        }
         a {
           @include link-white;
           &:hover {
