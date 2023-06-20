@@ -1,22 +1,28 @@
 /* line 1, ../sass/_global.scss */
+body {
+  @import url(https://pl.allfont.net/allfont.css?fonts=roboto-regular);
+  font-family: 'Roboto Regular', arial;
+}
+
+/* line 6, ../sass/_global.scss */
 a {
   font-weight: 600;
   text-decoration: none;
   color: #031C07;
 }
-/* line 5, ../sass/_global.scss */
+/* line 10, ../sass/_global.scss */
 a:hover {
   color: #DD843B;
 }
 
-/* line 10, ../sass/_global.scss */
+/* line 15, ../sass/_global.scss */
 .header-wrapper {
   position: relative;
   width: 100%;
   height: 70vh;
   overflow: hidden;
 }
-/* line 16, ../sass/_global.scss */
+/* line 21, ../sass/_global.scss */
 .header-wrapper .field--name-field-page-title {
   position: absolute;
   bottom: 10%;
@@ -26,7 +32,7 @@ a:hover {
   width: 100%;
   text-align: center;
 }
-/* line 25, ../sass/_global.scss */
+/* line 30, ../sass/_global.scss */
 .header-wrapper .field--name-field-image {
   position: absolute;
   bottom: 50%;
@@ -34,13 +40,13 @@ a:hover {
   opacity: 0.7;
 }
 @media only screen and (max-width: 680px) {
-  /* line 25, ../sass/_global.scss */
+  /* line 30, ../sass/_global.scss */
   .header-wrapper .field--name-field-image {
     bottom: 0;
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 33, ../sass/_global.scss */
+  /* line 38, ../sass/_global.scss */
   .header-wrapper .field--name-field-image img {
     width: 100%;
     height: 100%;
@@ -48,42 +54,42 @@ a:hover {
   }
 }
 
-/* line 43, ../sass/_global.scss */
+/* line 48, ../sass/_global.scss */
 article.content {
   margin: auto;
   min-height: 30vh;
 }
-/* line 46, ../sass/_global.scss */
+/* line 51, ../sass/_global.scss */
 article.content .webform-submission-form {
   padding: 30px 40px;
 }
-/* line 49, ../sass/_global.scss */
+/* line 54, ../sass/_global.scss */
 article.content .field--type-text-with-summary {
   padding: 30px 40px;
 }
 
 @media only screen and (max-width: 680px) {
-  /* line 53, ../sass/_global.scss */
+  /* line 58, ../sass/_global.scss */
   .form-text {
     max-width: 70vw;
   }
 }
 
 @media only screen and (max-width: 680px) {
-  /* line 58, ../sass/_global.scss */
+  /* line 63, ../sass/_global.scss */
   .form-email {
     max-width: 70vw;
   }
 }
 
-/* line 66, ../sass/_global.scss */
+/* line 71, ../sass/_global.scss */
 #edit-actions input {
   padding: 5px;
   border: #031C07 solid 2px;
   background: #FFFFFF;
   color: #031C07;
 }
-/* line 71, ../sass/_global.scss */
+/* line 76, ../sass/_global.scss */
 #edit-actions input:hover {
   color: #DD843B;
 }
@@ -271,6 +277,11 @@ footer #block-copyright {
   font-size: 22px;
 }
 
+/* line 2, ../sass/_page.scss */
+.page-node-type-page .page {
+  padding: 30px;
+}
+
 /* line 2, ../sass/_gallery.scss */
 #block-lesnik-content .view-gallery {
   padding: 20px;
@@ -346,4 +357,41 @@ footer #block-copyright {
   vertical-align: top;
   text-align: left;
   margin-left: 20px;
+}
+
+/* line 1, ../sass/_user.scss */
+.user-login-form {
+  height: 80vh;
+  padding-top: 100px;
+  padding-left: 50px;
+  width: 100%;
+}
+/* line 6, ../sass/_user.scss */
+.user-login-form label {
+  display: block;
+}
+/* line 9, ../sass/_user.scss */
+.user-login-form .description {
+  width: 70vw;
+}
+
+/* line 3, ../sass/_logged.scss */
+.user-logged-in .layout-container main {
+  min-height: 70vh;
+}
+
+/* line 1, ../sass/_imageParagraphWithTextLeft.scss */
+.paragraph--type--image-with-text-left {
+  margin-bottom: 20px;
+}
+/* line 3, ../sass/_imageParagraphWithTextLeft.scss */
+.paragraph--type--image-with-text-left .field {
+  width: fit-content;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 7, ../sass/_imageParagraphWithTextLeft.scss */
+.paragraph--type--image-with-text-left .field .field__item {
+  text-align: justify;
+  width: fit-content;
 }
