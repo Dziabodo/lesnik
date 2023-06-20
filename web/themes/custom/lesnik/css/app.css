@@ -277,8 +277,9 @@ footer #block-copyright {
   font-size: 22px;
 }
 
-/* line 2, ../sass/_page.scss */
-.page-node-type-page .page {
+/* line 3, ../sass/_page.scss */
+.page-node-type-page .page .content {
+  padding-top: 50px;
   padding: 30px;
 }
 
