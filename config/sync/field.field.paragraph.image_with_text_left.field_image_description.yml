@@ -1,0 +1,21 @@
+uuid: 30acfdc5-53f1-4aa9-b577-bdd0b938685e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_description
+    - paragraphs.paragraphs_type.image_with_text_left
+  module:
+    - text
+id: paragraph.image_with_text_left.field_image_description
+field_name: field_image_description
+entity_type: paragraph
+bundle: image_with_text_left
+label: 'Image Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

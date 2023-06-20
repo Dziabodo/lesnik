@@ -363,9 +363,10 @@ display:
       path: gallery
       menu:
         type: normal
-        title: Gallery
+        title: Galeria
         description: ''
-        weight: -50
+        weight: -46
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''

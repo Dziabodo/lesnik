@@ -1,0 +1,10 @@
+uuid: dd79f1d1-81fa-4034-b3c4-058cfd698f84
+langcode: en
+status: true
+dependencies: {  }
+id: image_with_text_left
+label: 'Image with Text Left'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
