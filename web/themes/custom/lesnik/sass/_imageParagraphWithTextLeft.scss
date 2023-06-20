@@ -1,0 +1,12 @@
+.paragraph--type--image-with-text-left {
+  margin-bottom: 20px;
+  .field {
+    width: fit-content;
+    display: inline-block;
+    vertical-align: top;
+    .field__item {
+      text-align: justify;
+      width: fit-content;
+    }
+  }
+}
