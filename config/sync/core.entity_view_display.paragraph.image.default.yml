@@ -4,17 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image.field_image
+    - image.style.news_fe_480x480
     - paragraphs.paragraphs_type.image
+  module:
+    - media
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
 mode: default
 content:
   field_image:
-    type: entity_reference_label
+    type: media_thumbnail
     label: hidden
     settings:
-      link: true
+      image_link: ''
+      image_style: news_fe_480x480
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
