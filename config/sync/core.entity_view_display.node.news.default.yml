@@ -12,6 +12,7 @@ dependencies:
   module:
     - media
     - text
+    - user
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -44,9 +45,6 @@ content:
     weight: 0
     region: content
 hidden:
-  created: true
   field_teaser_image: true
   langcode: true
   links: true
-  title: true
-  uid: true
