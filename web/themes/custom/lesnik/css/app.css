@@ -316,6 +316,12 @@ footer #block-copyright {
 /* line 28, ../sass/_gallery.scss */
 .paragraph--type--gallery {
   background: #000;
+  width: 75%;
+  margin: auto;
+}
+/* line 32, ../sass/_gallery.scss */
+.paragraph--type--gallery .fotorama__wrap {
+  margin: auto;
 }
 
 /* line 1, ../sass/_front-page.scss */
