@@ -1,0 +1,55 @@
+uuid: fa13a46a-d876-4a7e-b326-31bd856eceac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.news
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_with_text_left
+    - paragraphs.paragraphs_type.image_with_text_right
+  module:
+    - entity_reference_revisions
+id: node.news.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: news
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+      image: image
+      image_with_text_left: image_with_text_left
+      image_with_text_right: image_with_text_right
+    negate: 0
+    target_bundles_drag_drop:
+      front_page_galery:
+        weight: 8
+        enabled: false
+      gallery:
+        weight: 9
+        enabled: true
+      image:
+        weight: 10
+        enabled: true
+      image_with_text_left:
+        weight: 11
+        enabled: true
+      image_with_text_right:
+        weight: 12
+        enabled: true
+      map:
+        weight: 13
+        enabled: false
+      webform:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions
