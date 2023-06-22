@@ -114,7 +114,7 @@ article.content .field--type-text-with-summary {
 /* line 14, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-link {
   position: absolute;
-  bottom: 50%;
+  bottom: 30%;
   left: 10%;
   font-size: 30px;
   padding: 10px;
@@ -263,7 +263,7 @@ article.content .field--type-text-with-summary {
 .region-primary-menu .menu--main .menu .menu-item {
   display: inline-block;
   align-self: center;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 @media only screen and (max-width: 680px) {
   /* line 72, ../sass/_menu.scss */
