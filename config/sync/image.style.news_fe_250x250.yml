@@ -5,11 +5,10 @@ dependencies: {  }
 name: news_fe_250x250
 label: 'news FE 250x250'
 effects:
-  9915b27c-4c2d-4842-ac14-860618d89187:
-    uuid: 9915b27c-4c2d-4842-ac14-860618d89187
-    id: image_crop
-    weight: 1
+  b8436876-8e4c-4b79-900e-eeaf4de1b8a9:
+    uuid: b8436876-8e4c-4b79-900e-eeaf4de1b8a9
+    id: image_resize
+    weight: 2
     data:
       width: 250
       height: 250
-      anchor: center-center

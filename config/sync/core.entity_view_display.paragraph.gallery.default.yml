@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.gallery.field_gellery_title
     - field.field.paragraph.gallery.field_image_gallery
+    - image.style.gallery_style
     - paragraphs.paragraphs_type.gallery
   module:
     - media
@@ -18,7 +19,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: gallery_style
       image_loading:
         attribute: lazy
     third_party_settings: {  }
