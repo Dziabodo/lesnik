@@ -122,6 +122,10 @@ slider:
   version: VERSION
   js:
     js/slider.js: { }
+menu:
+  version: VERSION
+  js:
+    js/menu.js: { }
 jquery:
   remote: true
   license:

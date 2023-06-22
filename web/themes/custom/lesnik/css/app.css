@@ -114,7 +114,7 @@ article.content .field--type-text-with-summary {
 /* line 14, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-link {
   position: absolute;
-  bottom: 50%;
+  bottom: 30%;
   left: 10%;
   font-size: 30px;
   padding: 10px;
@@ -198,22 +198,90 @@ article.content .field--type-text-with-summary {
   object-fit: contain;
 }
 /* line 22, ../sass/_menu.scss */
+.region-primary-menu .menu--main .hamburger {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 90px;
+  padding: 5px 15px 0px 15px;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  outline: none;
+  background: none;
+  color: #FFFFFF;
+}
+/* line 35, ../sass/_menu.scss */
+.region-primary-menu .menu--main .hamburger:hover {
+  color: #DD843B;
+}
+@media only screen and (max-width: 680px) {
+  /* line 22, ../sass/_menu.scss */
+  .region-primary-menu .menu--main .hamburger {
+    display: block;
+  }
+}
+/* line 42, ../sass/_menu.scss */
+.region-primary-menu .menu--main .cross {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  border: 0;
+  font-size: 3em;
+  line-height: 120px;
+  outline: none;
+  background: none;
+  color: #FFFFFF;
+}
+/* line 54, ../sass/_menu.scss */
+.region-primary-menu .menu--main .cross:hover {
+  color: #DD843B;
+}
+/* line 58, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu {
   text-align: right;
   padding-right: 5%;
   display: flex;
 }
-/* line 26, ../sass/_menu.scss */
+@media only screen and (max-width: 680px) {
+  /* line 58, ../sass/_menu.scss */
+  .region-primary-menu .menu--main .menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    margin: 10px 0 0 0;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background: #031C07;
+  }
+}
+/* line 72, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item {
   display: inline-block;
   align-self: center;
-  padding-right: 10px;
+  padding-right: 20px;
 }
-/* line 30, ../sass/_menu.scss */
+@media only screen and (max-width: 680px) {
+  /* line 72, ../sass/_menu.scss */
+  .region-primary-menu .menu--main .menu .menu-item {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 72, ../sass/_menu.scss */
+  .region-primary-menu .menu--main .menu .menu-item {
+    display: block;
+  }
+}
+/* line 82, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item a {
   color: #FFFFFF;
 }
-/* line 32, ../sass/_menu.scss */
+/* line 84, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item a:hover {
   color: #DD843B;
 }

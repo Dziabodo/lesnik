@@ -8,6 +8,7 @@ libraries:
   - lesnik/base
   - lesnik/swiper
   - lesnik/slider
+  - lesnik/menu
   - lesnik/gallery
   - lesnik/messages
   - core/normalize
