@@ -253,34 +253,35 @@ article.content .field--type-text-with-summary {
     position: absolute;
     top: 90px;
     margin: 10px 0 0 0;
+    padding-bottom: 20px;
     width: 100%;
     text-align: center;
     background: #031C07;
   }
 }
-/* line 71, ../sass/_menu.scss */
+/* line 72, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item {
   display: inline-block;
   align-self: center;
   padding-right: 10px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 71, ../sass/_menu.scss */
+  /* line 72, ../sass/_menu.scss */
   .region-primary-menu .menu--main .menu .menu-item {
-    padding: 10px;
+    padding: 15px;
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 71, ../sass/_menu.scss */
+  /* line 72, ../sass/_menu.scss */
   .region-primary-menu .menu--main .menu .menu-item {
     display: block;
   }
 }
-/* line 81, ../sass/_menu.scss */
+/* line 82, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item a {
   color: #FFFFFF;
 }
-/* line 83, ../sass/_menu.scss */
+/* line 84, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item a:hover {
   color: #DD843B;
 }
