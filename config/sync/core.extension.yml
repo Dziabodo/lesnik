@@ -15,8 +15,6 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -54,6 +52,7 @@ module:
   user: 0
   views_ui: 0
   webform: 0
+  webform_ui: 0
   pathauto: 1
   content_translation: 10
   views: 10
