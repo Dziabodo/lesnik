@@ -470,3 +470,10 @@ footer #block-copyright {
   text-align: justify;
   width: fit-content;
 }
+
+/* line 2, ../sass/_videoParagraph.scss */
+.field--name-field-media-oembed-video .media-oembed-content {
+  margin: auto;
+  height: 900px;
+  width: 100%;
+}

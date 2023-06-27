@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.image_with_text_left
     - paragraphs.paragraphs_type.image_with_text_right
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.video
     - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
@@ -33,6 +34,7 @@ settings:
       map: map
       image_with_text_left: image_with_text_left
       image_with_text_right: image_with_text_right
+      video: video
     negate: 0
     target_bundles_drag_drop:
       front_page_galery:
@@ -52,6 +54,9 @@ settings:
         enabled: true
       map:
         weight: 9
+        enabled: true
+      video:
+        weight: 15
         enabled: true
       webform:
         weight: 6
