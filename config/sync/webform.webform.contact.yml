@@ -17,37 +17,37 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: |
+elements: |-
   name:
-    '#title': 'Your Name'
     '#type': textfield
+    '#title': 'Imię i Nazwisko'
     '#required': true
     '#default_value': '[current-user:display-name]'
   email:
-    '#title': 'Your Email'
     '#type': email
+    '#title': Email
     '#required': true
     '#default_value': '[current-user:mail]'
   subject:
-    '#title': Subject
     '#type': textfield
+    '#title': Temat
     '#required': true
     '#test': 'Testing contact webform from [site:name]'
   message:
-    '#title': Message
     '#type': textarea
+    '#title': Wiadomość
     '#required': true
     '#test': 'Please ignore this email.'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+    '#submit__label': 'Wiślij wiadomość'
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
-  ajax_progress_type: ''
+  ajax_progress_type: throbber
   ajax_effect: ''
   ajax_speed: null
   page: true
@@ -129,6 +129,8 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -144,10 +146,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: message
   confirmation_url: '<front>'
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Wiadomośc wysłana.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

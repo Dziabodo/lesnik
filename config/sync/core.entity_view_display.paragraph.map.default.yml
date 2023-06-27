@@ -13,7 +13,7 @@ bundle: map
 mode: default
 content:
   field_google_map:
-    type: google_map_field_default
+    type: google_map_field_embed
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -2,5 +2,6 @@ _core:
   default_config_hash: mWL2dHvi9X6xknPeaUo2dSbC4IGZ-o-bdn2kRs0MzII
 langcode: pl
 google_map_field_auth_method: 1
-google_map_field_apikey: ''
+google_map_field_apikey: AIzaSyDzbIAJM_NmaL1uvf4APityvQEgiP0NI0o
 google_map_field_map_client_id: ''
+google_map_field_icon: null
