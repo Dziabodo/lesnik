@@ -410,23 +410,44 @@ footer #block-copyright {
   width: 49%;
   vertical-align: top;
 }
-/* line 8, ../sass/_contact.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 4, ../sass/_contact.scss */
+  .node-58 .field--type-entity-reference-revisions .field__item:nth-child(1) {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 12, ../sass/_contact.scss */
 .node-58 .field--type-entity-reference-revisions .field__item:nth-child(1) .paragraph--type--text {
   padding: 100px;
   width: 100%;
 }
-/* line 11, ../sass/_contact.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 12, ../sass/_contact.scss */
+  .node-58 .field--type-entity-reference-revisions .field__item:nth-child(1) .paragraph--type--text {
+    padding: 0;
+    text-align: center;
+  }
+}
+/* line 19, ../sass/_contact.scss */
 .node-58 .field--type-entity-reference-revisions .field__item:nth-child(1) .paragraph--type--text .field--name-field-text {
   width: 100%;
   display: block;
 }
-/* line 17, ../sass/_contact.scss */
+/* line 25, ../sass/_contact.scss */
 .node-58 .field--type-entity-reference-revisions .field__item:nth-child(2) {
   display: inline-flex;
   width: 49%;
   vertical-align: top;
 }
-/* line 24, ../sass/_contact.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 25, ../sass/_contact.scss */
+  .node-58 .field--type-entity-reference-revisions .field__item:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 36, ../sass/_contact.scss */
 .node-58 .field--type-entity-reference-revisions .paragraph--type--map .field--name-field-google-map {
   display: block;
   width: 100%;
