@@ -17,13 +17,16 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.2",
+        "drupal/antibot": "^2.0",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/google_map_field": "^1.14",
+        "drupal/honeypot": "^2.1",
         "drupal/jquery_ui": "^1.6",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
+        "drupal/simple_sitemap": "^4.1",
         "drupal/webform": "^6.1"
     },
     "conflict": {
