@@ -69,6 +69,7 @@
 #}
 {%
   set classes = [
+    'node-' ~ node.id,
     'page',
     'node',
     'node--type-' ~ node.bundle|clean_class,

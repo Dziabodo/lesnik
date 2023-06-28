@@ -1,0 +1,30 @@
+.node-58 {
+  .field--type-entity-reference-revisions {
+    .field__item {
+      &:nth-child(1) {
+        display: inline-flex;
+        width: 49%;
+        vertical-align: top;
+        .paragraph--type--text{
+          padding: 100px;
+          width: 100%;
+          .field--name-field-text {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      &:nth-child(2) {
+        display: inline-flex;
+        width: 49%;
+        vertical-align: top;
+      }
+    }
+    .paragraph--type--map {
+      .field--name-field-google-map {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
