@@ -34,9 +34,13 @@
 }
 @mixin devices ($breakpoints) {
   @if $breakpoints == mobile {
-    @media only screen and (max-width: 680px){
+    @media only screen and (max-width: 680px) {
       @content
     }
   }
-
+  @if $breakpoints == tablet {
+    @media only screen and (max-width: 1200px){
+      @content
+    }
+  }
 }

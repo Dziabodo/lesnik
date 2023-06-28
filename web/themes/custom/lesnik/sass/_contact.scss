@@ -2,10 +2,18 @@
   .field--type-entity-reference-revisions {
     .field__item {
       &:nth-child(1) {
+        @include devices(tablet){
+          display:block;
+          width: 100%;
+        }
         display: inline-flex;
         width: 49%;
         vertical-align: top;
-        .paragraph--type--text{
+        .paragraph--type--text {
+          @include devices(tablet){
+            padding: 0;
+            text-align: center;
+          }
           padding: 100px;
           width: 100%;
           .field--name-field-text {
@@ -15,6 +23,10 @@
         }
       }
       &:nth-child(2) {
+        @include devices(tablet){
+          display:block;
+          width: 100%;
+        }
         display: inline-flex;
         width: 49%;
         vertical-align: top;
