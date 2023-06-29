@@ -321,28 +321,33 @@ footer #block-copyright {
 }
 /* line 3, ../sass/_news.scss */
 .view-news .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   max-width: fit-content;
   margin: auto;
   text-align: center;
   background: #FFFFFF;
 }
-/* line 8, ../sass/_news.scss */
+/* line 11, ../sass/_news.scss */
 .view-news .view-content .views-row {
   max-width: 300px;
   display: inline-block;
   padding: 15px;
+  margin-bottom: 15px;
   border: #031C07 solid 2px;
 }
-/* line 13, ../sass/_news.scss */
+/* line 17, ../sass/_news.scss */
 .view-news .view-content .views-row .views-field-field-teaser-image {
   text-align: center;
   width: auto;
 }
-/* line 17, ../sass/_news.scss */
+/* line 21, ../sass/_news.scss */
 .view-news .view-content .views-row .views-field-title {
   text-align: center;
   padding: 5px;
   font-size: 22px;
+  max-width: 240px;
 }
 
 /* line 3, ../sass/_page.scss */
