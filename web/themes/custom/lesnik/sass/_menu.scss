@@ -35,7 +35,7 @@
         &:hover {
           @include link-orange;
         }
-       @include devices(mobile){
+       @include devices(tablet){
         display:block;
       }
     }
@@ -56,7 +56,10 @@
         }
       }
     .menu {
-      @include devices(mobile){
+      @include devices(desktop){
+        line-height: 4;
+      }
+      @include devices(tablet){
         display:none;
         position:absolute;
         top:90px;
@@ -70,13 +73,13 @@
       padding-right: 5%;
       display:flex;
       .menu-item {
-        @include devices(mobile){
+        @include devices(tablet){
           padding:15px;
         }
         display: inline-block;
         align-self: center;
         padding-right: 20px;
-        @include devices(mobile){
+        @include devices(tablet){
           display:block;
         }
         a {

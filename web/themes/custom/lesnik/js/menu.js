@@ -13,4 +13,14 @@ $(document).ready(function() {
       $( ".hamburger" ).show();
     });
   });
+  $(window).resize(function() {
+    if ($(window).width() > 1200) {
+        $( ".cross" ).hide();
+        $( ".hamburger" ).hide();
+        $( ".menu" ).show();
+    }else {
+      $( ".hamburger" ).show();
+      $( ".menu" ).hide();
+    }
+  });
 });

@@ -210,7 +210,7 @@ article.content .field--type-text-with-summary {
 .region-primary-menu .menu--main .hamburger:hover {
   color: #DD843B;
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 1200px) {
   /* line 22, ../sass/_menu.scss */
   .region-primary-menu .menu--main .hamburger {
     display: block;
@@ -240,7 +240,13 @@ article.content .field--type-text-with-summary {
   padding-right: 5%;
   display: flex;
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (min-width: 1201px) {
+  /* line 58, ../sass/_menu.scss */
+  .region-primary-menu .menu--main .menu {
+    line-height: 4;
+  }
+}
+@media only screen and (max-width: 1200px) {
   /* line 58, ../sass/_menu.scss */
   .region-primary-menu .menu--main .menu {
     display: none;
@@ -253,29 +259,29 @@ article.content .field--type-text-with-summary {
     background: #031C07;
   }
 }
-/* line 72, ../sass/_menu.scss */
+/* line 75, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item {
   display: inline-block;
   align-self: center;
   padding-right: 20px;
 }
-@media only screen and (max-width: 680px) {
-  /* line 72, ../sass/_menu.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 75, ../sass/_menu.scss */
   .region-primary-menu .menu--main .menu .menu-item {
     padding: 15px;
   }
 }
-@media only screen and (max-width: 680px) {
-  /* line 72, ../sass/_menu.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 75, ../sass/_menu.scss */
   .region-primary-menu .menu--main .menu .menu-item {
     display: block;
   }
 }
-/* line 82, ../sass/_menu.scss */
+/* line 85, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item a {
   color: #FFFFFF;
 }
-/* line 84, ../sass/_menu.scss */
+/* line 87, ../sass/_menu.scss */
 .region-primary-menu .menu--main .menu .menu-item a:hover {
   color: #DD843B;
 }
@@ -328,7 +334,7 @@ footer #block-copyright {
   max-width: 300px;
   display: inline-block;
   padding: 15px;
-  margin-bottom: 15px;
+  margin: 0 10px 15px 0;
   border: #031C07 solid 2px;
 }
 /* line 17, ../sass/_news.scss */
