@@ -12,9 +12,6 @@
   .paragraph--type--front-page-galery {
     position: relative;
     .field--name-field-link {
-      @include devices(mobile){
-        display:none;
-      }
       position: absolute;
       bottom: 30%;
       left: 10%;
