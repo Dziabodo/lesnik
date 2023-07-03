@@ -4,6 +4,7 @@ $(document).ready(function() {
     $( ".menu" ).slideToggle( "fast", function() {
       $( ".hamburger" ).hide();
       $( ".cross" ).show();
+      $( ".menu" ).addClass( "isActive" )
     });
   });
 
@@ -11,16 +12,24 @@ $(document).ready(function() {
     $( ".menu" ).slideToggle( "fast", function() {
       $( ".cross" ).hide();
       $( ".hamburger" ).show();
+      $( ".menu" ).removeClass( "isActive" )
     });
   });
   $(window).resize(function() {
-    if ($(window).width() > 1200) {
-        $( ".cross" ).hide();
+     if($(".menu").hasClass( "isActive" )){
         $( ".hamburger" ).hide();
         $( ".menu" ).show();
-    }else {
-      $( ".hamburger" ).show();
-      $( ".menu" ).hide();
-    }
+        $( ".cross" ).show();
+      } else {
+        $( ".hamburger" ).show();
+        $( ".cross" ).hide();
+        $( ".menu" ).hide();
+      }
+     if ($(window).width() > 1200) {
+       $( ".cross" ).hide();
+       $( ".hamburger" ).hide();
+       $( ".menu" ).show(); 
+       $( ".menu" ).removeClass( "isActive" )
+     } 
   });
 });
