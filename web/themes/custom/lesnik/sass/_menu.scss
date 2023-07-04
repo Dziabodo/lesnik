@@ -60,24 +60,12 @@
         }
       }
     .menu {
-      &-item{
-        
-      //   .menu li {
-      //     display:none;
-      //   }
-      //   &:hover li{
-      //     display: block;
-      //   }
-      }
       @include devices(desktop){
         line-height: 4;
       }
       @include devices(tablet){
         display:none;
-        // position:absolute;
-        // top:90px;
         margin:10px 0 0 0; 
-        padding-bottom: 20px;
         width:100%;
         height:auto;
         text-align: center;
@@ -101,6 +89,14 @@
           &:hover {
             @include link-orange;
           }
+        }
+      }
+      .menu-item--expanded > ul li.menu-item {
+        display:none;
+      }
+      .menu-item--expanded {
+        & .active ~ ul li.menu-item {
+          display:block;
         }
       }
     }

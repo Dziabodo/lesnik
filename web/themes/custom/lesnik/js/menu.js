@@ -4,7 +4,7 @@ $(document).ready(function() {
     $( ".menu" ).slideToggle( "fast", function() {
       $( ".hamburger" ).hide();
       $( ".cross" ).show();
-      $( ".menu" ).addClass( "isActive" )
+      $( "menu" ).addClass( "isActive" )
     });
   });
 
@@ -33,8 +33,13 @@ $(document).ready(function() {
      } 
   });
   if ($(window).width() < 1200) {
-    $(".menu-item--expanded > a").on("click", function(event){
+    $(".menu-item--expanded > a " ).on("click", function(event){
       event.preventDefault();
+
+      $(this).hasClass("active") 
+        ? $(this).removeClass('active')
+        : $(this).addClass("active")
+      
     })
   } 
 });
