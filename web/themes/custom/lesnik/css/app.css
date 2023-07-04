@@ -114,7 +114,7 @@ article.content .field--type-text-with-summary {
 /* line 14, ../sass/_slider.scss */
 .swiper .paragraph--type--front-page-galery .field--name-field-link {
   position: absolute;
-  bottom: 30%;
+  top: 60%;
   left: 10%;
   font-size: 30px;
   padding: 10px;
