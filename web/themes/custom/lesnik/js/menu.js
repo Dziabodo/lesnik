@@ -32,4 +32,9 @@ $(document).ready(function() {
        $( ".menu" ).removeClass( "isActive" )
      } 
   });
+  if ($(window).width() < 1200) {
+    $(".menu-item--expanded > a").on("click", function(event){
+      event.preventDefault();
+    })
+  } 
 });

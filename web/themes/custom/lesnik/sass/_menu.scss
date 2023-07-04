@@ -8,10 +8,14 @@
     display:flex;
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    @include devices(tablet){
+      flex-direction: column;
+      overflow-x: hidden;
+    }
     .site-logo {
       height:80px;
       padding: 10px 0 10px 20px;
+      width:100px;
       img {
         display:block;
         width:100%;
@@ -56,16 +60,26 @@
         }
       }
     .menu {
+      &-item{
+        
+      //   .menu li {
+      //     display:none;
+      //   }
+      //   &:hover li{
+      //     display: block;
+      //   }
+      }
       @include devices(desktop){
         line-height: 4;
       }
       @include devices(tablet){
         display:none;
-        position:absolute;
-        top:90px;
+        // position:absolute;
+        // top:90px;
         margin:10px 0 0 0; 
         padding-bottom: 20px;
         width:100%;
+        height:auto;
         text-align: center;
         @include background-green;
       }
