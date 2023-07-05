@@ -6,8 +6,8 @@ name: 'Koło Łowieckie Leśnik Lipinki Łużyckie'
 mail: karol.weclawski@gmail.com
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node/1
+  404: /node/1
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100

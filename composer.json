@@ -27,6 +27,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/simple_sitemap": "^4.1",
+        "drupal/stage_file_proxy": "^2.0",
         "drupal/webform": "^6.1"
     },
     "conflict": {

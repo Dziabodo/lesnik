@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_image
     - field.storage.node.field_teaser_image
     - image.style.front_page_slider
-    - image.style.large
+    - image.style.news_fe_250x250
     - node.type.gellery
     - system.menu.main
   module:
@@ -82,7 +82,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: content
-            image_style: large
+            image_style: news_fe_250x250
             image_loading:
               attribute: lazy
           group_column: target_id
