@@ -236,6 +236,7 @@ article.content .field--type-text-with-summary {
 .region-primary-menu .menu--main ul.menu {
   line-height: 6;
   margin: 0;
+  margin-right: 30px;
 }
 @media only screen and (max-width: 1200px) {
   /* line 55, ../sass/_menu.scss */
@@ -244,61 +245,62 @@ article.content .field--type-text-with-summary {
     width: 100%;
     text-align: center;
     line-height: 3;
+    margin-right: 0;
     background: #031C07;
   }
 }
-/* line 65, ../sass/_menu.scss */
+/* line 67, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu .menu-item {
   display: inline-block;
   align-self: center;
   padding: 0 10px;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 65, ../sass/_menu.scss */
+  /* line 67, ../sass/_menu.scss */
   .region-primary-menu .menu--main ul.menu .menu-item {
     display: block;
     text-transform: uppercase;
     padding-right: 0;
   }
 }
-/* line 74, ../sass/_menu.scss */
+/* line 76, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu .menu-item a {
   color: #FFFFFF;
 }
-/* line 78, ../sass/_menu.scss */
+/* line 80, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded {
   height: 100%;
   text-align: center;
 }
 @media only screen and (min-width: 1201px) {
-  /* line 78, ../sass/_menu.scss */
+  /* line 80, ../sass/_menu.scss */
   .region-primary-menu .menu--main ul.menu li.menu-item--expanded {
     position: relative;
   }
 }
-/* line 84, ../sass/_menu.scss */
+/* line 86, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded a {
   display: block;
   height: 100%;
   width: 100%;
 }
 @media only screen and (min-width: 1201px) {
-  /* line 90, ../sass/_menu.scss */
+  /* line 92, ../sass/_menu.scss */
   .region-primary-menu .menu--main ul.menu li.menu-item--expanded a:hover + ul,
   .region-primary-menu .menu--main ul.menu li.menu-item--expanded a + ul:hover {
     display: block;
   }
 }
-/* line 95, ../sass/_menu.scss */
+/* line 97, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded ul {
   line-height: 1;
 }
-/* line 98, ../sass/_menu.scss */
+/* line 100, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu {
   display: none;
 }
 @media only screen and (min-width: 1201px) {
-  /* line 98, ../sass/_menu.scss */
+  /* line 100, ../sass/_menu.scss */
   .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu {
     position: absolute;
     margin-top: 80px;
@@ -309,7 +311,7 @@ article.content .field--type-text-with-summary {
     border-radius: 5px;
   }
 }
-/* line 110, ../sass/_menu.scss */
+/* line 112, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item {
   min-width: 150px;
   text-align: center;
@@ -317,17 +319,17 @@ article.content .field--type-text-with-summary {
   text-transform: lowercase;
   padding: 0;
 }
-/* line 116, ../sass/_menu.scss */
+/* line 118, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item:hover {
   background: #031C07;
 }
 @media only screen and (min-width: 1201px) {
-  /* line 110, ../sass/_menu.scss */
+  /* line 112, ../sass/_menu.scss */
   .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item {
     width: 100%;
   }
 }
-/* line 122, ../sass/_menu.scss */
+/* line 124, ../sass/_menu.scss */
 .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item a {
   display: block;
   width: 100%;

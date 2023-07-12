@@ -2,16 +2,24 @@ $(document).ready(function() {
  $( ".cross" ).hide();
   $( ".hamburger" ).click(function() {
     $( "nav > .menu" ).slideToggle( "fast", function() {
-      $( ".hamburger" ).hide();
-      $( ".cross" ).show();
+      $(this).showCross();
       $("nav > .menu").addClass('active');
     });
   });
 
+  $.fn.showHamburger = function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+  };
+
+  $.fn.showCross = function() {
+    $( ".hamburger" ).hide();
+    $( ".cross" ).show();
+  };
+
   $( ".cross" ).click(function() {
     $( "nav > .menu" ).slideToggle( "fast", function() {
-      $( ".cross" ).hide();
-      $( ".hamburger" ).show();
+      $(this).showHamburger()
       $(".menu-item.menu-item--expanded a").removeClass( "active" );
       $(".menu-item.menu-item--expanded .menu").css({"display":"none"});
       $("nav > .menu").removeClass('active');
@@ -26,11 +34,9 @@ $(document).ready(function() {
        $(".menu-item.menu-item--expanded .menu").css({"display":"none"});
       } else {
           if($("nav .menu").hasClass( "active" )){
-            $( ".hamburger" ).hide();
-            $( ".cross" ).show();
+            $(this).showCross()
           } else {
-              $( ".hamburger" ).show();
-              $( ".cross" ).hide();
+            $(this).showHamburger()
               $( "nav .menu" ).hide();
             } 
      } 
@@ -39,14 +45,11 @@ $(document).ready(function() {
     $(".menu-item--expanded > a " ).on("click", function(event){
       event.preventDefault();
 
-      $(this).hasClass("active") 
-        ? $(this).removeClass('active')
-        : $(this).addClass("active")
+      $(this).toggleClass("active") 
 
         if($(this).hasClass("active")){
-
           $(this).closest("li.menu-item.menu-item--expanded").find("ul.menu").css({"display":"block"})
-        }else{
+        } else{
           $(this).closest("li.menu-item.menu-item--expanded").find("ul.menu").css({"display":"none"})
         }
     })
