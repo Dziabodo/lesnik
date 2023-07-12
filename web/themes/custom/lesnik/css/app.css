@@ -177,21 +177,27 @@ article.content .field--type-text-with-summary {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
 }
-/* line 12, ../sass/_menu.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 7, ../sass/_menu.scss */
+  .region-primary-menu .menu--main {
+    flex-direction: column;
+  }
+}
+/* line 14, ../sass/_menu.scss */
 .region-primary-menu .menu--main .site-logo {
   height: 80px;
   padding: 10px 0 10px 20px;
+  width: 100px;
 }
-/* line 15, ../sass/_menu.scss */
+/* line 18, ../sass/_menu.scss */
 .region-primary-menu .menu--main .site-logo img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-/* line 22, ../sass/_menu.scss */
+/* line 25, ../sass/_menu.scss */
 .region-primary-menu .menu--main .hamburger {
   display: none;
   position: absolute;
@@ -206,12 +212,8 @@ article.content .field--type-text-with-summary {
   background: none;
   color: #FFFFFF;
 }
-/* line 35, ../sass/_menu.scss */
-.region-primary-menu .menu--main .hamburger:hover {
-  color: #DD843B;
-}
-@media only screen and (max-width: 680px) {
-  /* line 22, ../sass/_menu.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 25, ../sass/_menu.scss */
   .region-primary-menu .menu--main .hamburger {
     display: block;
   }
@@ -230,54 +232,110 @@ article.content .field--type-text-with-summary {
   background: none;
   color: #FFFFFF;
 }
-/* line 54, ../sass/_menu.scss */
-.region-primary-menu .menu--main .cross:hover {
-  color: #DD843B;
+/* line 55, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu {
+  line-height: 6;
+  margin: 0;
+  margin-right: 30px;
 }
-/* line 58, ../sass/_menu.scss */
-.region-primary-menu .menu--main .menu {
-  text-align: right;
-  padding-right: 5%;
-  display: flex;
-}
-@media only screen and (max-width: 680px) {
-  /* line 58, ../sass/_menu.scss */
-  .region-primary-menu .menu--main .menu {
+@media only screen and (max-width: 1200px) {
+  /* line 55, ../sass/_menu.scss */
+  .region-primary-menu .menu--main ul.menu {
     display: none;
-    position: absolute;
-    top: 90px;
-    margin: 10px 0 0 0;
-    padding-bottom: 20px;
     width: 100%;
     text-align: center;
+    line-height: 3;
+    margin-right: 0;
     background: #031C07;
   }
 }
-/* line 72, ../sass/_menu.scss */
-.region-primary-menu .menu--main .menu .menu-item {
+/* line 67, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu .menu-item {
   display: inline-block;
   align-self: center;
-  padding-right: 20px;
+  padding: 0 10px;
 }
-@media only screen and (max-width: 680px) {
-  /* line 72, ../sass/_menu.scss */
-  .region-primary-menu .menu--main .menu .menu-item {
-    padding: 15px;
+@media only screen and (max-width: 1200px) {
+  /* line 67, ../sass/_menu.scss */
+  .region-primary-menu .menu--main ul.menu .menu-item {
+    display: block;
+    text-transform: uppercase;
+    padding-right: 0;
   }
 }
-@media only screen and (max-width: 680px) {
-  /* line 72, ../sass/_menu.scss */
-  .region-primary-menu .menu--main .menu .menu-item {
+/* line 76, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu .menu-item a {
+  color: #FFFFFF;
+}
+/* line 80, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded {
+  height: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 1201px) {
+  /* line 80, ../sass/_menu.scss */
+  .region-primary-menu .menu--main ul.menu li.menu-item--expanded {
+    position: relative;
+  }
+}
+/* line 86, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 1201px) {
+  /* line 92, ../sass/_menu.scss */
+  .region-primary-menu .menu--main ul.menu li.menu-item--expanded a:hover + ul,
+  .region-primary-menu .menu--main ul.menu li.menu-item--expanded a + ul:hover {
     display: block;
   }
 }
-/* line 82, ../sass/_menu.scss */
-.region-primary-menu .menu--main .menu .menu-item a {
-  color: #FFFFFF;
+/* line 97, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded ul {
+  line-height: 1;
 }
-/* line 84, ../sass/_menu.scss */
-.region-primary-menu .menu--main .menu .menu-item a:hover {
-  color: #DD843B;
+/* line 100, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu {
+  display: none;
+}
+@media only screen and (min-width: 1201px) {
+  /* line 100, ../sass/_menu.scss */
+  .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu {
+    position: absolute;
+    margin-top: 80px;
+    top: 0px;
+    left: 0;
+    margin-left: 0;
+    background-color: #2b742c;
+    border-radius: 5px;
+  }
+}
+/* line 112, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item {
+  min-width: 150px;
+  text-align: center;
+  transition: .3s;
+  text-transform: lowercase;
+  padding: 0;
+}
+/* line 118, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item:hover {
+  background: #031C07;
+}
+@media only screen and (min-width: 1201px) {
+  /* line 112, ../sass/_menu.scss */
+  .region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item {
+    width: 100%;
+  }
+}
+/* line 124, ../sass/_menu.scss */
+.region-primary-menu .menu--main ul.menu li.menu-item--expanded .menu .menu-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  margin: 0;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -328,7 +386,7 @@ footer #block-copyright {
   max-width: 300px;
   display: inline-block;
   padding: 15px;
-  margin-bottom: 15px;
+  margin: 0 10px 15px 0;
   border: #031C07 solid 2px;
 }
 /* line 17, ../sass/_news.scss */

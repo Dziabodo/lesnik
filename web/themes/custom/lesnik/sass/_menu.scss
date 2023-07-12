@@ -8,10 +8,13 @@
     display:flex;
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    @include devices(tablet){
+      flex-direction: column;
+    }
     .site-logo {
       height:80px;
       padding: 10px 0 10px 20px;
+      width:100px;
       img {
         display:block;
         width:100%;
@@ -32,10 +35,7 @@
       outline:none;
       background:none;
       @include link-white;
-        &:hover {
-          @include link-orange;
-        }
-       @include devices(mobile){
+       @include devices(tablet){
         display:block;
       }
     }
@@ -51,41 +51,86 @@
       outline:none;
       background:none;
       @include link-white;
-        &:hover {
-          @include link-orange;
-        }
-      }
-    .menu {
-      @include devices(mobile){
+    }
+    ul.menu {
+      line-height: 6;
+      margin:0;
+      margin-right: 30px;
+      @include devices(tablet){
         display:none;
-        position:absolute;
-        top:90px;
-        margin:10px 0 0 0; 
-        padding-bottom: 20px;
         width:100%;
         text-align: center;
+        line-height: 3;
+        margin-right: 0;
         @include background-green;
       }
-      text-align: right;
-      padding-right: 5%;
-      display:flex;
       .menu-item {
-        @include devices(mobile){
-          padding:15px;
-        }
         display: inline-block;
         align-self: center;
-        padding-right: 20px;
-        @include devices(mobile){
+        padding:0 10px;
+        @include devices(tablet){
           display:block;
+          text-transform: uppercase;
+          padding-right:0;
         }
         a {
           @include link-white;
-          &:hover {
-            @include link-orange;
-          }
         }
       }
+        li.menu-item--expanded {
+          @include devices(desktop){
+          position: relative;
+          }
+          height:100%;
+          text-align: center;
+          a {
+            display:block;
+            height:100%;
+            width:100%
+          }
+          @include devices(desktop){   
+            a:hover + ul,
+            a + ul:hover {
+              display:block;
+            }
+          } 
+          ul {
+            line-height: 1;
+          }     
+          .menu  {
+            display:none;  
+            @include devices(desktop){    
+              position:absolute;
+              margin-top:80px;
+              top:0px;
+              left:0;
+              margin-left: 0;
+              background-color: rgb(43, 116, 44);
+              border-radius: 5px;
+            }
+          
+            .menu-item {
+              min-width: 150px;
+              text-align: center;
+              transition: .3s;
+              text-transform: lowercase;
+              padding: 0;
+              &:hover{
+                @include background-green;
+              }
+              @include devices(desktop){
+                width:100%;
+              }
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 10px 0;
+                margin: 0;  
+              }
+            }
+          }
+        }
     }
   }
 }
