@@ -62,12 +62,14 @@
         text-align: center;
         line-height: 3;
         margin-right: 0;
+        margin-left:30px;
         @include background-green;
       }
       .menu-item {
         display: inline-block;
         align-self: center;
         padding:0 10px;
+        text-align: left;
         @include devices(tablet){
           display:block;
           text-transform: uppercase;
@@ -75,23 +77,28 @@
         }
         a {
           @include link-white;
+          &:hover {
+            @include link-orange;
+          }
         }
+
       }
         li.menu-item--expanded {
           @include devices(desktop){
           position: relative;
           }
           height:100%;
-          text-align: center;
+          text-align: left;
           a {
             display:block;
             height:100%;
-            width:100%
+            width:100%;
           }
           @include devices(desktop){   
-            a:hover + ul,
-            a + ul:hover {
-              display:block;
+            a:hover + ul.menu,
+            a + ul.menu:hover 
+            {
+              opacity:1;
             }
           } 
           ul {
@@ -104,17 +111,23 @@
               margin-top:80px;
               top:0px;
               left:0;
+              display:block;
+              opacity:0;
+              transition: opacity .3s;
               margin-left: 0;
-              background-color: rgb(43, 116, 44);
               border-radius: 5px;
+              @include background-green;
             }
           
             .menu-item {
               min-width: 150px;
-              text-align: center;
+              text-align: left;
               transition: .3s;
-              text-transform: lowercase;
-              padding: 0;
+              padding: 0 0 0 30px;
+              @include devices(desktop){  
+                text-align: center;
+                padding: 0;
+              }
               &:hover{
                 @include background-green;
               }
