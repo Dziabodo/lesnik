@@ -8,8 +8,9 @@
     display:flex;
     justify-content: space-between;
     height: 100%;
-    @include devices(tablet){
-      flex-direction: column;
+    flex-direction: column;
+    @include devices(desktop){
+      flex-direction: row;
     }
     .site-logo {
       height:80px;
@@ -23,127 +24,151 @@
       }
     }
     .hamburger {
-      display:none;
+      display:block;
       position:absolute;
-      top:0;
-      right:0;
-      line-height:90px;
-      padding:5px 15px 0px 15px;
+      top:30px;
+      right:10px;
       border:0;
-      font-size:1.4em;
-      font-weight:bold;
+      font-size: 30px;
       outline:none;
       background:none;
       @include link-white;
-       @include devices(tablet){
-        display:block;
-      }
-    }
-    .cross{  
-      display:none;
-      position:absolute;
-      top:0;
-      right:0;
-      padding:7px 15px 0px 15px;
-      border:0;
-      font-size:3em;
-      line-height:120px;
-      outline:none;
-      background:none;
-      @include link-white;
-    }
-    ul.menu {
-      line-height: 6;
-      margin:0;
-      margin-right: 30px;
-      @include devices(tablet){
+       @include devices(desktop) {
         display:none;
-        width:100%;
-        text-align: center;
-        line-height: 3;
-        margin-right: 0;
+      }
+    }
+    .cross {  
+      display:none;
+      position:absolute;
+      top:30px;
+      right:10px;
+      font-weight:normal;
+      border:0;
+      font-size:30px;
+      outline:none;
+      background:none;
+      @include link-white;
+    }
+      ul.menu {
+        display:none;
         margin-left:30px;
-        @include background-green;
-      }
-      .menu-item {
-        display: inline-block;
-        align-self: center;
-        padding:0 10px;
-        text-align: left;
-        @include devices(tablet){
-          display:block;
-          text-transform: uppercase;
-          padding-right:0;
-        }
-        a {
-          @include link-white;
-          &:hover {
-            @include link-orange;
-          }
-        }
+        @include devices(desktop) {
+          display:flex;
+          margin-left:0;
+          align-items: center;
 
-      }
-        li.menu-item--expanded {
-          @include devices(desktop){
-          position: relative;
+        }
+        .menu-item {
+          @include devices(desktop) {
+            margin-right: 30px;
+            a {
+              &:hover {
+                @include link-orange;
+              }
+            }
           }
-          height:100%;
-          text-align: left;
           a {
             display:block;
-            height:100%;
-            width:100%;
+            @include link-white;
+            @include devices(tablet){
+              text-transform: uppercase;
+            }
+            padding-bottom:30px;
+            @include devices(desktop){
+              padding: 20px 0 20px 0;
+            }
+            &.is-active {
+              @include link-orange;
+            }
           }
-          @include devices(desktop){   
-            a:hover + ul.menu,
-            a + ul.menu:hover 
-            {
-              opacity:1;
-            }
-          } 
-          ul {
-            line-height: 1;
-          }     
-          .menu  {
-            display:none;  
-            @include devices(desktop){    
-              position:absolute;
-              margin-top:80px;
-              top:0px;
-              left:0;
-              display:block;
-              opacity:0;
-              transition: opacity .3s;
-              margin-left: 0;
-              border-radius: 5px;
-              @include background-green;
-            }
-          
-            .menu-item {
-              min-width: 150px;
-              text-align: left;
-              transition: .3s;
-              padding: 0 0 0 30px;
-              @include devices(desktop){  
-                text-align: center;
-                padding: 0;
+          &--expanded {
+            list-style-type: none;
+            list-style-image:none;
+            @include devices(desktop) {
+              position: relative;
+              
+              a:hover + ul.menu,
+              a + ul.menu:hover .menu-item,
+              &:hover .menu .menu-item {
+                &:nth-child(1) a {
+                  position: absolute;
+                  top:10px;
+                  height:30px;
+                  @include link-white;
+                  @include background-green;
+                  padding-bottom:5px;
+                  border-radius: 7px;
+                  &:hover {
+                    @include link-orange;
+                  }
+                }
+                &:nth-child(2) a { 
+                  position: absolute;
+                  top:40px;
+                  height:30px;
+                  @include link-white;
+                  @include background-green;
+                  padding-bottom:5px;
+                  border-radius: 7px;
+                  &:hover {
+                    @include link-orange;
+                  }
+                }
+                &:nth-child(3) a {
+                  position: absolute;
+                  top:70px;
+                  height:30px;
+                  @include link-white;
+                  @include background-green;
+                  padding-bottom:5px;
+                  border-radius: 7px;
+                  &:hover {
+                    @include link-orange;
+                  }
+                }
+                 z-index:10;
+                 height:auto;
               }
-              &:hover{
+              &:hover:nth-child(1) .menu {
+                position:absolute;
+                top:60px;
+                left:-40px;
+              }
+              .menu {
+                position:absolute;
+                display: flex;
+                flex-direction: column;
+                transition: .3s;
+                border-radius: 7px;
                 @include background-green;
-              }
-              @include devices(desktop){
-                width:100%;
-              }
-              a {
-                display: block;
-                width: 100%;
-                height: 100%;
-                padding: 10px 0;
-                margin: 0;  
+
+                .menu-item {
+                  width:150px;
+                  margin-right: 0;
+                  text-align: center;
+                  &:nth-child(1) a,
+                  &:nth-child(2) a,
+                  &:nth-child(3) a {
+                    position:absolute;
+                    top:0px;
+                    background:transparent;
+                    color:transparent;
+                    padding-top:5px;
+                    padding-bottom:5px;
+                    transition:.6s;
+                  }
+                  a {
+                    width:100%;
+                    height:100%;
+                    display:block;
+                    margin:0;
+                    padding: 0;
+                  }
+                }
               }
             }
           }
         }
-    }
+      }
   }
 }
