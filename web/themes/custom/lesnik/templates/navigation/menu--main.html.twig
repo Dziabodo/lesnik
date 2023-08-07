@@ -31,6 +31,8 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
+     <button class="hamburger">&#9776;</button>
+     <button class="cross">&#10005;</button>
       <ul{{ attributes.addClass('menu') }}>
     {% else %}
       <ul class="menu">
@@ -52,7 +54,5 @@
       </li>
     {% endfor %}
     </ul>
-    <button class="hamburger">&#9776;</button>
-    <button class="cross">&#735;</button>
   {% endif %}
 {% endmacro %}

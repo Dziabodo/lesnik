@@ -8,10 +8,14 @@
     display:flex;
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    flex-direction: column;
+    @include devices(desktop){
+      flex-direction: row;
+    }
     .site-logo {
       height:80px;
       padding: 10px 0 10px 20px;
+      width:100px;
       img {
         display:block;
         width:100%;
@@ -20,72 +24,151 @@
       }
     }
     .hamburger {
-      display:none;
+      display:block;
       position:absolute;
-      top:0;
-      right:0;
-      line-height:90px;
-      padding:5px 15px 0px 15px;
+      top:30px;
+      right:10px;
       border:0;
-      font-size:1.4em;
-      font-weight:bold;
+      font-size: 30px;
       outline:none;
       background:none;
       @include link-white;
-        &:hover {
-          @include link-orange;
-        }
-       @include devices(mobile){
-        display:block;
+       @include devices(desktop) {
+        display:none;
       }
     }
-    .cross{  
+    .cross {  
       display:none;
       position:absolute;
-      top:0;
-      right:0;
-      padding:7px 15px 0px 15px;
+      top:30px;
+      right:10px;
+      font-weight:normal;
       border:0;
-      font-size:3em;
-      line-height:120px;
+      font-size:30px;
       outline:none;
       background:none;
       @include link-white;
-        &:hover {
-          @include link-orange;
-        }
-      }
-    .menu {
-      @include devices(mobile){
+    }
+      ul.menu {
         display:none;
-        position:absolute;
-        top:90px;
-        margin:10px 0 0 0; 
-        padding-bottom: 20px;
-        width:100%;
-        text-align: center;
-        @include background-green;
-      }
-      text-align: right;
-      padding-right: 5%;
-      display:flex;
-      .menu-item {
-        @include devices(mobile){
-          padding:15px;
+        margin-left:30px;
+        @include devices(desktop) {
+          display:flex;
+          margin-left:0;
+          align-items: center;
+
         }
-        display: inline-block;
-        align-self: center;
-        padding-right: 20px;
-        @include devices(mobile){
-          display:block;
-        }
-        a {
-          @include link-white;
-          &:hover {
-            @include link-orange;
+        .menu-item {
+          @include devices(desktop) {
+            margin-right: 30px;
+            a {
+              &:hover {
+                @include link-orange;
+              }
+            }
+          }
+          a {
+            display:block;
+            @include link-white;
+            @include devices(tablet){
+              text-transform: uppercase;
+            }
+            padding-bottom:30px;
+            @include devices(desktop){
+              padding: 20px 0 20px 0;
+            }
+            &.is-active {
+              @include link-orange;
+            }
+          }
+          &--expanded {
+            list-style-type: none;
+            list-style-image:none;
+            @include devices(desktop) {
+              position: relative;
+              
+              a:hover + ul.menu,
+              a + ul.menu:hover .menu-item,
+              &:hover .menu .menu-item {
+                &:nth-child(1) a {
+                  position: absolute;
+                  top:10px;
+                  height:30px;
+                  @include link-white;
+                  @include background-green;
+                  padding-bottom:5px;
+                  border-radius: 7px;
+                  &:hover {
+                    @include link-orange;
+                  }
+                }
+                &:nth-child(2) a { 
+                  position: absolute;
+                  top:40px;
+                  height:30px;
+                  @include link-white;
+                  @include background-green;
+                  padding-bottom:5px;
+                  border-radius: 7px;
+                  &:hover {
+                    @include link-orange;
+                  }
+                }
+                &:nth-child(3) a {
+                  position: absolute;
+                  top:70px;
+                  height:30px;
+                  @include link-white;
+                  @include background-green;
+                  padding-bottom:5px;
+                  border-radius: 7px;
+                  &:hover {
+                    @include link-orange;
+                  }
+                }
+                 z-index:10;
+                 height:auto;
+              }
+              &:hover:nth-child(1) .menu {
+                position:absolute;
+                top:60px;
+                left:-40px;
+              }
+              .menu {
+                position:absolute;
+                display: flex;
+                flex-direction: column;
+                transition: .3s;
+                border-radius: 7px;
+                @include background-green;
+
+                .menu-item {
+                  width:150px;
+                  margin-right: 0;
+                  text-align: center;
+                  &:nth-child(1) a,
+                  &:nth-child(2) a,
+                  &:nth-child(3) a {
+                    position:absolute;
+                    top:0px;
+                    background:transparent;
+                    color:transparent;
+                    padding-top:5px;
+                    padding-bottom:5px;
+                    transition:.6s;
+                  }
+                  a {
+                    width:100%;
+                    height:100%;
+                    display:block;
+                    margin:0;
+                    padding: 0;
+                  }
+                }
+              }
+            }
           }
         }
       }
-    }
   }
 }
