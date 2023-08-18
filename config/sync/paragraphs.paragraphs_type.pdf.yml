@@ -1,0 +1,10 @@
+uuid: 33243d31-86b0-4234-a8e3-400bb881a5f0
+langcode: en
+status: true
+dependencies: {  }
+id: pdf
+label: Pdf
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

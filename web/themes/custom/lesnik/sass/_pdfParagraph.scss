@@ -1,0 +1,13 @@
+.paragraph--type--pdf {
+  .field--name-field-media-document {
+    padding: 30px;
+    .field__item {
+      width: fit-content;
+      margin: auto;
+      .pdf {
+        width: 85vw;
+        height: 75vh;
+      }
+    }
+  }
+}
