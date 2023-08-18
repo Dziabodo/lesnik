@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.image_with_text_left
     - paragraphs.paragraphs_type.image_with_text_right
+    - paragraphs.paragraphs_type.pdf
   module:
     - entity_reference_revisions
 id: node.news.field_paragraphs
@@ -29,6 +30,7 @@ settings:
       image: image
       image_with_text_left: image_with_text_left
       image_with_text_right: image_with_text_right
+      pdf: pdf
     negate: 0
     target_bundles_drag_drop:
       front_page_galery:
@@ -48,6 +50,15 @@ settings:
         enabled: true
       map:
         weight: 13
+        enabled: false
+      pdf:
+        weight: 17
+        enabled: true
+      text:
+        weight: 18
+        enabled: false
+      video:
+        weight: 19
         enabled: false
       webform:
         weight: 14

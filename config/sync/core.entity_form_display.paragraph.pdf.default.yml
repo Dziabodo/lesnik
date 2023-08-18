@@ -1,0 +1,24 @@
+uuid: e3ca9e2d-e9ed-49df-8cfa-6ef8771e510c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pdf.field_pdf
+    - paragraphs.paragraphs_type.pdf
+  module:
+    - media_library
+id: paragraph.pdf.default
+targetEntityType: paragraph
+bundle: pdf
+mode: default
+content:
+  field_pdf:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -624,3 +624,18 @@ footer #block-copyright {
   height: 900px;
   width: 100%;
 }
+
+/* line 2, ../sass/_pdfParagraph.scss */
+.paragraph--type--pdf .field--name-field-media-document {
+  padding: 30px;
+}
+/* line 4, ../sass/_pdfParagraph.scss */
+.paragraph--type--pdf .field--name-field-media-document .field__item {
+  width: fit-content;
+  margin: auto;
+}
+/* line 7, ../sass/_pdfParagraph.scss */
+.paragraph--type--pdf .field--name-field-media-document .field__item .pdf {
+  width: 85vw;
+  height: 75vh;
+}
