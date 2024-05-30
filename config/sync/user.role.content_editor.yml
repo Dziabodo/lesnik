@@ -8,6 +8,7 @@ dependencies:
   module:
     - contextual
     - file
+    - help
     - node
     - path
     - system
@@ -25,12 +26,14 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access help pages'
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
   - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own page content'

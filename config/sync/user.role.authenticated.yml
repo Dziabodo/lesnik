@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
     - contact
+    - file
     - filter
     - media
     - search
@@ -14,13 +16,15 @@ dependencies:
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'Authenticated user'
+label: 'Użytkownik uwierzytelniony'
 weight: 1
 is_admin: false
 permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'delete own files'
   - 'search content'
   - 'use text format basic_html'
+  - 'use text format webform_default'
   - 'view media'
