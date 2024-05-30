@@ -23,5 +23,5 @@ libraries-extend:
     - lesnik/file
   core/drupal.progress:
     - lesnik/progress
-core_version_requirement: ^9
+core_version_requirement: ^9 | ^10
 generator: 'starterkit_theme:9.4.8'

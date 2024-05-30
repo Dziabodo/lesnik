@@ -4,6 +4,7 @@ langcode: pl
 hotlink: false
 origin: ''
 origin_dir: ''
+proxy_headers: ''
 use_imagecache_root: true
 verify: true
 excluded_extensions: ''
