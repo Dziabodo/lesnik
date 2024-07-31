@@ -12,6 +12,7 @@ module:
   breakpoint: 0
   ckeditor: 0
   ckeditor5: 0
+  ckeditor_text_transformation: 0
   config: 0
   contact: 0
   contextual: 0
